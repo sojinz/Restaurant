@@ -38,7 +38,7 @@ img {
   width: 100%;
   max-width: 122.5rem;
   margin: 0 auto;
-  padding: 0 8rem;
+  padding: 0 6rem;
 }
 
 /* header */
@@ -143,7 +143,7 @@ header {
 }
 
 .logo img {
-  width: 18rem;
+  width: 15rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -172,8 +172,8 @@ header {
 .big-headline {
   color: var(--brown-color);
   font-family: var(--main-serif-font);
-  font-size: 6rem;
-  line-height: 7rem;
+  font-size: 5rem;
+  line-height: 6rem;
   margin: 3rem 0;
   animation: fadeup 0.5s forwards;
   animation-delay: 0.5s;
@@ -222,6 +222,7 @@ header {
 .about-us {
   background-color: var(--light-grey-color);
   height: 55vh;
+  min-height: 380px;
 }
 .about-us-box {
   width: 100%;
@@ -257,7 +258,7 @@ header {
 }
 .mid-headline {
   color: #fff;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: var(--main-serif-font);
   font-weight: 300;
   position: relative;
@@ -266,7 +267,7 @@ header {
 
 .mid-headline::before {
   content: "";
-  width: 10rem;
+  width: 9rem;
   height: 0.2rem;
   background-color: var(--orange-color);
   position: absolute;
@@ -279,9 +280,9 @@ header {
   text-overflow: hidden;
   margin: 2rem 0;
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 300;
-  line-height: 3rem;
+  line-height: 2.5rem;
 }
 
 .btn-2 {
@@ -324,8 +325,8 @@ header {
 .chef {
   background-color: var(--light-grey-color);
   width: 100%;
-  height: 75vh;
-  min-height: 700px;
+  height: 55vh;
+  min-height: 650px;
 }
 
 .chef-box {
@@ -349,7 +350,7 @@ header {
 
 .mid-headline-brown {
   color: var(--brown-color);
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: var(--main-serif-font);
   font-weight: 300;
   letter-spacing: -0.1rem;
@@ -371,9 +372,9 @@ header {
   text-overflow: ellipsis;
   margin: 2rem 0;
   color: var(--brown-color);
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 300;
-  line-height: 3rem;
+  line-height: 2.5rem;
 }
 
 .body-typing-brown span {
@@ -384,7 +385,7 @@ header {
 .news {
   background-color: var(--red-brown-color);
   width: 100%;
-  height: 105vh;
+  height: 120vh;
 }
 
 .news-box-container {
@@ -465,7 +466,7 @@ header {
 footer {
   background-color: var(--brown-color);
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   position: relative;
 }
 
@@ -505,12 +506,12 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 3rem;
+  margin-right: 1rem;
 }
 
 .socialmedia {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .socialmedia i {
@@ -569,6 +570,9 @@ footer {
 }
 
 @media screen and (min-width: 900px) {
+  .container {
+    padding: 0 8rem;
+  }
   header {
     height: 10vh;
   }
@@ -643,6 +647,14 @@ footer {
     line-height: 7.5rem;
   }
 
+  .mid-headline {
+    font-size: 4rem;
+  }
+
+  .mid-headline::before {
+    width: 10rem;
+  }
+
   .about-us {
     height: 40vh;
   }
@@ -665,6 +677,8 @@ footer {
 
   .body-typing {
     text-overflow: ellipsis;
+    font-size: 1.7rem;
+    line-height: 3rem;
   }
 
   /* menu */
@@ -714,6 +728,10 @@ footer {
     margin-left: 3rem;
   }
 
+  .mid-headline-brown {
+    font-size: 4rem;
+  }
+
   .chef-text-box {
     position: absolute;
     top: 0;
@@ -722,9 +740,14 @@ footer {
     margin: 0 2rem;
     padding-right: 2rem;
   }
+
+  .body-typing-brown {
+    font-size: 1.7rem;
+    line-height: 3rem;
+  }
   /* news */
   .news {
-    height: 65vh;
+    height: 70vh;
     min-height: 500px;
   }
 
@@ -737,6 +760,10 @@ footer {
   }
 
   /* footer */
+  .socialmedia {
+    color: #fff;
+    font-size: 2rem;
+  }
   .contact-image {
     display: inline;
     max-width: 35rem;
